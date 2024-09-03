@@ -12,15 +12,15 @@ class HomeController extends AbstractController
     public function index(): Response
     {
         return $this->render('home/index.html.twig', [
-            'title' => '** Homepage **',
+            'title' => '* Homepage *',
         ]);
     }
 
     #[Route('/about', name: 'about_me')]
-    public function index(): Response
+    public function aboutMe(): Response
     {
-        return $this->render('home/index.html.twig', [
-            'title' => '** Homepage **',
+        return $this->render('home/about.html.twig', [
+            'title' => 'About me',
         ]);
     }
 }
